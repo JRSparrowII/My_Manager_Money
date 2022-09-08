@@ -36,40 +36,44 @@ export function Menu(){
                                 className="menu-button" 
                                 type="button"
                                 onClick={onOpenNewTransactionModal}>
-                                <img src={receitaImg} alt="receita" />
-                                
+                                <img src={receitaImg} alt="receita" />                                
                                 <span>Nova Transação</span> 
                             </button>
 
                             <button className="menu-button" type="button">  
                                 <img src={lancamentoImg} alt="lancamentos" />                                      
+                                <Link to="/home">
+                                    Home
+                                </Link>
+                            </button>  
+
+                            <button className="menu-button" type="button">  
+                                <img src={lancamentoImg} alt="lancamentos" />                                      
                                 <Link to="/lancamentos">
                                     Lançamentos
-                                </Link>    
-
-                            </button>                            
-                           
-                            
-                                                     
+                                </Link>
+                            </button>                                            
                             
                             <button className="menu-button" type="button">
                                 <img src={cardcreditImg} alt="cartao_credito" />                               
                                 <span>Cartão de Crédito</span> 
                             </button>
+
                             <button className="menu-button" type="button">
-                                <img src={contasreceberImg} alt="receita" />
-                                {/* <a href="gastosmensais.html"></a> */}
+                                <img src={contasreceberImg} alt="receita" />                                
                                 <span>Contas a Receber</span>                     
                             </button>
+
                             <button className="menu-button" type="button">
                                 <img src={contaspgImg} alt="receita" />                     
                                 <span>Contas a Pagar</span> 
                             </button>
+
                             <button className="menu-button" type="button">
-                                <img src={relatoriosImg} alt="receita" />  
-                                
+                                <img src={relatoriosImg} alt="receita" />                                
                                 <span>Outros Relatórios</span> 
-                            </button>                
+                            </button> 
+                                           
                         </nav>
                     </aside>
                 </div>
