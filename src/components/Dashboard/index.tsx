@@ -1,6 +1,5 @@
 // import { Container } from "../Header/styles";
 import { Summary } from '../Summary';
-import { TransactionsTable } from '../TransactionsTable/Index';
 import {Container} from './styles';
 import { Menu } from '../Menu';
 
@@ -13,9 +12,8 @@ export function Dashboard(){
                 <div className="container-dashboard-grafico">
                     <h1>Grafico</h1>
                 </div>
-            </div>                   
-              
-            {/* <TransactionsTable/>                             */}
+            </div>          
+           
         </Container>
     );
 }
