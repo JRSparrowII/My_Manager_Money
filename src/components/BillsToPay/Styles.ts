@@ -1,11 +1,28 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    margin-top: 0rem;
+
+    .input-filter{
+        width: 10rem;
+        height: 3rem;
+        margin: 0 0 10px 30px;        
+        border-radius: 10px;
+        color: var(--text-body);
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        border-color: #6194A0;
+        border-bottom: 1px solid #6194A0;
+        
+        font-weight: 400;       
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    margin-top: 4rem;
     table{
         width: 100%;
-        border-spacing: 0 0.5rem;
-        font-size: 15px;
+        border-spacing: 0 0.5rem;        
     }
 
     th{

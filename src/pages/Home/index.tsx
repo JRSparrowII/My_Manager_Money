@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { Dashboard } from '../../components/Dashboard/index';
 import { Header } from '../../components/Header/Index';
-import { GlobalStyle } from '../../styles/global';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import { NewTransactionModal } from '../../components/NewTransactionModal';
@@ -28,8 +27,7 @@ const Home = (): JSX.Element => {
       <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseNewTransactionModal}
-      />
-      <GlobalStyle/>
+      />      
     </>
   );
 }

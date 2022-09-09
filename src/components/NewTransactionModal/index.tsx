@@ -148,8 +148,19 @@ export function NewTransactionModal({isOpen, onRequestClose}:NewTransactionModal
                             value={paymentMethod}
                             onChange={event => setPaymentMethod(event.target.value)}
                         />
-                    </div>
-                </div>       
+                    </div>                    
+                </div>   
+
+                {/* ESCOLHA O NUMERO DE PARCELAS */}
+                <div>
+                    <img src={HistoricoImg} alt="historico"/>
+                    <span>Escolha o numero de Parcelas</span>
+                    <input
+                        placeholder='Ex: 03 Parcelas'
+                        value={historic}
+                        onChange={event => setHistoric(event.target.value)}
+                    />
+                </div>     
 
                 <div className="input-modal">                  
                     <div>

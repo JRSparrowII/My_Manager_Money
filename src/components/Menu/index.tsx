@@ -42,7 +42,7 @@ export function Menu(){
 
                             <button className="menu-button" type="button">  
                                 <img src={lancamentoImg} alt="lancamentos" />                                      
-                                <Link to="/home">
+                                <Link to="/">
                                     Home
                                 </Link>
                             </button>  
@@ -60,8 +60,10 @@ export function Menu(){
                             </button>
 
                             <button className="menu-button" type="button">
-                                <img src={contasreceberImg} alt="receita" />                                
-                                <span>Contas a Receber</span>                     
+                                <img src={contasreceberImg} alt="receita" />                             
+                                <Link to="/ContasPagar">
+                                    Contas a Receber
+                                </Link>                    
                             </button>
 
                             <button className="menu-button" type="button">
@@ -73,7 +75,14 @@ export function Menu(){
                                 <img src={relatoriosImg} alt="receita" />                                
                                 <span>Outros Relatórios</span> 
                             </button> 
-                                           
+
+                            <button className="menu-button" type="button">
+                                <img src={relatoriosImg} alt="receita" /> 
+                                <Link to="/configuracoes">
+                                    Configurações
+                                </Link>                          
+                            </button> 
+
                         </nav>
                     </aside>
                 </div>

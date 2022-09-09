@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { TransactionsTable } from '../../components/TransactionsTable/Index';
 import { Menu } from '../../components/Menu';
 import { Header } from "../../components/Header/Index";
-import { GlobalStyle } from '../../styles/global';
 import {Container} from '../../components/Dashboard/styles';
+import { BillsToPay } from '../../components/BillsToPay/Index';
 
-const Lancamentos = (): JSX.Element => {
+const ContasPagar = (): JSX.Element => {
 
     const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false);
 
@@ -24,19 +24,14 @@ const Lancamentos = (): JSX.Element => {
                 <Menu />
                 <div className="container-dashboard">                
                     <div className="container-dashboard-grafico">
-                        <TransactionsTable/>                    
+                        <BillsToPay/>    
+                        {/* <TransactionsTable/>                 */}
                     </div>
-                </div>              
+                </div>                
             </Container>   
         </>
     );    
 
 }
 
-export default Lancamentos;
-
-
-
-
-
-
+export default ContasPagar;

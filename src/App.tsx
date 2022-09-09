@@ -17,6 +17,7 @@ export function App() {
     <BrowserRouter>
       <TransactionsProvider>
         <Routes/>
+        <GlobalStyle/>
       </TransactionsProvider>
     </BrowserRouter>
   );
